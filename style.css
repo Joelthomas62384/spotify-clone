@@ -25,14 +25,14 @@ body{
 main{
     padding: 12px 10px;
    
-    height:41rem;
+    height:90vh;
     
     /* background-color: red; */
 }
 
 
 main aside {
-    width: 4.6%;
+    width: 4.6rem;
 }
 
 main aside nav{
