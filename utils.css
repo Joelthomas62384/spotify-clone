@@ -1,0 +1,108 @@
+.flex{
+    display: flex;
+
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.center{
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.w-full{
+    width: 100%;
+}
+
+.h-full{
+    height: 100%;
+}
+
+.rounded-md{
+    border-radius: 12px;
+}
+
+.rounded-xl{
+    border-radius: 50%;
+}
+
+.rounded-full{
+    border-radius: 100%;
+}
+
+.gap-1{
+    gap: 9px;
+}
+
+.gap-2{
+    gap: 18px;
+}
+
+.overflow-y-auto{
+    overflow-y: auto;
+    scrollbar-width: thin; 
+    scrollbar-color: #222121 #393838;
+    scroll-behavior: smooth;
+
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+
+
+.mt-1{
+    margin-top: 20px;
+}
+
+.mt-10{
+    margin-top: 50px;
+}
+
+
+.p-1{
+    padding: 10px;
+}
+
+
+.text-ellipsis{
+    text-overflow: ellipsis;
+}
+
+
+.overflow-hidden{
+    overflow: hidden;
+    
+}
+
+.select-none{
+    user-select: none;
+}

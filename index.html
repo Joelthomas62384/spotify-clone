@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon16.1c487bff.png" type="image/x-icon">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+
+    <main class="flex w-full gap-1">
+        <aside class="flex flex-col gap-1">
+            <nav class="w-full rounded-md">
+                <ul class=" w-full h-full flex flex-col items-center space-evenly">
+                    <li title="Home"><a href=""><img width="25 class=" link-img" src="images/home.svg" alt=""></a></li>
+                    <li title="Search"><a href=""><img width="25" class="link-img" src="images/search.svg" alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="playlist flex flex-col w-full rounded-md items-center ">
+                <img width="25" src="images/library.svg" alt="">
+                <ul class=" w-full h-full flex flex-col items-center space-evenly overflow-y-auto mt-1">
+                    <li class="w-full flex center"><a href=""><img width="45" src="images/favorite.png" alt=""></a></li>
+                    <li class="w-full flex center"><a href=""><img class="rounded-xl" width="45"
+                                src="images/ar rahman.webp" alt=""></a></li>
+                    <li class="w-full flex center"><a href=""><img class="rounded-xl" width="45"
+                                src="images/chinmayi.webp" alt=""></a></li>
+                    <li class="w-full flex center"><a href=""><img class="rounded-xl" width="45" src="images/sid.webp"
+                                alt=""></a></li>
+                    <li class="w-full flex center"><a href=""><img class="rounded-xl" width="45" src="images/mitho.webp"
+                                alt=""></a></li>
+                    <li class="w-full flex center"><a href=""><img class="rounded-xl" width="45"
+                                src="images/arijit.webp" alt=""></a></li>
+
+                </ul>
+            </div>
+        </aside>
+
+        <div id="hero" class="hero w-full rounded-md overflow-y-auto">
+            <div id="navbar" class="navbar flex flex-col w-full space-evenly">
+                <div class="navs w-full flex space-between">
+                    <div class="nav1 flex space-between ">
+                        <div class=" n-p-control flex w-full gap-1">
+                            <span class="p-n-btn cursor-pointer bg-black p-1 rounded-xl">
+                                <img src="images/prev.svg" width="15" height="15" alt="">
+                                <!-- <img src="images/prev.svg" width="15" alt=""> -->
+                            </span>
+
+                            <span class="p-n-btn cursor-pointer bg-black p-1 rounded-xl">
+                                <img src="images/next.svg" width="17" height="15" alt="">
+                                <!-- <img src="images/prev.svg" width="15" alt=""> -->
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="nav2 flex items-center w-full   space-evenly">
+                        <span class="cursor-pointer nav-btn nb1 rounded-md">
+                            Explore Premium
+                        </span>
+
+                        <span class="cursor-pointer nav-btn  nb2  flex items-center space-evenly  ">
+                            <img src="images/download.svg" width="15" alt="">
+                            <span class="nb2">Install App</span>
+                        </span>
+
+                        <span class="bell cursor-pointer nav-btn bg-black p-1 rounded-xl">
+                            <img src="images/bell.svg" width="17" alt="">
+                        </span>
+                        <span class="j-tag rounded-xl nav-btn cursor-pointer">J</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="nav-tabs flex items-center gap-2 ">
+                    <span class="tab rounded-md cursor-pointer">All</span>
+                    <span class="tab rounded-md cursor-pointer">Music</span>
+                    <span class="tab rounded-md cursor-pointer">Podcasts</span>
+                </div>
+            </div>
+
+
+
+            <div class="main mt-10">
+                <div class="card-section">
+                    <div class="category">
+                        <h2>Best Episodes of the week</h2>
+                    </div>
+
+                    <div class="cards flex mt-1 gap-2">
+
+                        <div class="card cursor-pointer flex flex-col items-center center  relative">
+                            <img src="images/card-img1.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img2.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Pride and Politics ft. Anis...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img3.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">An Ode to Artists : Ft...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img4.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="card-section mt-10">
+                    <div class="category flex space-between items-center">
+                        <h2>Best Episodes of the week</h2>
+                        <a href="">Show all</a>
+                    </div>
+
+                    <div class="cards flex mt-1 gap-2">
+
+                        <div class="card cursor-pointer flex flex-col items-center center  relative">
+                            <img src="images/card-img1.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img2.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Pride and Politics ft. Anis...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img3.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">An Ode to Artists : Ft...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img4.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="card-section mt-10">
+                    <div class="category flex space-between items-center">
+                        <h2>Best Episodes of the week</h2>
+                        <a href="">Show all</a>
+                    </div>
+
+                    <div class="cards flex mt-1 gap-2">
+
+                        <div class="card cursor-pointer flex flex-col items-center center  relative">
+                            <img src="images/card-img1.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img2.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Pride and Politics ft. Anis...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img3.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">An Ode to Artists : Ft...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img4.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="card-section mt-10">
+                    <div class="category flex space-between items-center">
+                        <h2>Best Episodes of the week</h2>
+                        <a href="">Show all</a>
+                    </div>
+
+                    <div class="cards flex mt-1 gap-2">
+
+                        <div class="card cursor-pointer flex flex-col items-center center  relative">
+                            <img src="images/card-img1.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img2.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Pride and Politics ft. Anis...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img3.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">An Ode to Artists : Ft...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img4.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="card-section mt-10">
+                    <div class="category flex space-between items-center">
+                        <h2>Best Episodes of the week</h2>
+                        <a href="">Show all</a>
+                    </div>
+
+                    <div class="cards flex mt-1 gap-2">
+
+                        <div class="card cursor-pointer flex flex-col items-center center  relative">
+                            <img src="images/card-img1.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img2.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Pride and Politics ft. Anis...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img3.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">An Ode to Artists : Ft...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img4.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="card-section mt-10">
+                    <div class="category flex space-between items-center">
+                        <h2>Best Episodes of the week</h2>
+                        <a href="">Show all</a>
+                    </div>
+
+                    <div class="cards flex mt-1 gap-2">
+
+                        <div class="card cursor-pointer flex flex-col items-center center  relative">
+                            <img src="images/card-img1.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img2.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Pride and Politics ft. Anis...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img3.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">An Ode to Artists : Ft...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img4.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="card-section">
+                    <div class="category">
+                        <h2>Best Episodes of the week</h2>
+                    </div>
+
+                    <div class="cards flex mt-1 gap-2">
+
+                        <div class="card cursor-pointer flex flex-col items-center center  relative">
+                            <img src="images/card-img1.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img2.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Pride and Politics ft. Anis...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img3.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">An Ode to Artists : Ft...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img4.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="card-section mt-10">
+                    <div class="category flex space-between items-center">
+                        <h2>Best Episodes of the week</h2>
+                        <a href="">Show all</a>
+                    </div>
+
+                    <div class="cards flex mt-1 gap-2">
+
+                        <div class="card cursor-pointer flex flex-col items-center center  relative">
+                            <img src="images/card-img1.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img2.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Pride and Politics ft. Anis...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img3.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">An Ode to Artists : Ft...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img4.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                
+                <div class="card-section mt-10">
+                    <div class="category flex space-between items-center">
+                        <h2>Best Episodes of the week</h2>
+                        <a href="">Show all</a>
+                    </div>
+
+                    <div class="cards flex mt-1 gap-2">
+
+                        <div class="card cursor-pointer flex flex-col items-center center  relative">
+                            <img src="images/card-img1.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img2.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Pride and Politics ft. Anis...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img3.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">An Ode to Artists : Ft...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img4.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                
+                <div class="card-section mt-10">
+                    <div class="category flex space-between items-center">
+                        <h2>Popular Artists</h2>
+                        <a href="">Show all</a>
+                    </div>
+
+                    <div class="cards flex mt-1 gap-2">
+
+                        <div class="card cursor-pointer flex flex-col items-center center  relative">
+                            <img src="images/ar rahman.webp" width="209" alt="Card Image" class="card-img rounded-xl">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/arijit.webp" width="209" height="209" alt="Card Image" class="card-img rounded-xl">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Pride and Politics ft. Anis...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/mitho.webp" width="209" alt="Card Image" class="card-img rounded-xl">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">An Ode to Artists : Ft...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/chinmayi.webp" width="209" alt="Card Image" class="card-img rounded-xl">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/pritm.webp" width="209" alt="Card Image" class="card-img rounded-xl">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30"
+                                    alt=""></span>
+                            <img src="images/card-img5.jpeg"  width="209" alt="Card Image" class="card-img rounded-xl">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="card-section mt-10">
+                    <div class="category flex space-between items-center">
+                        <h2>Best Episodes of the week</h2>
+                        <a href="">Show all</a>
+                    </div>
+
+                    <div class="cards flex mt-1 gap-2">
+
+                        <div class="card cursor-pointer flex flex-col items-center center  relative">
+                            <img src="images/card-img1.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img2.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Pride and Politics ft. Anis...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img3.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">An Ode to Artists : Ft...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img4.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+
+                </div>
+
+                <div class="card-section mt-10">
+                    <div class="category flex space-between items-center">
+                        <h2>Best Episodes of the week</h2>
+                        <a href="">Show all</a>
+                    </div>
+
+                    <div class="cards flex mt-1 gap-2">
+
+                        <div class="card cursor-pointer flex flex-col items-center center  relative">
+                            <img src="images/card-img1.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img2.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Pride and Politics ft. Anis...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img3.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">An Ode to Artists : Ft...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img4.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+
+                </div>
+
+                <div class="card-section mt-10">
+                    <div class="category flex space-between items-center">
+                        <h2>Best Episodes of the week</h2>
+                        <a href="">Show all</a>
+                    </div>
+
+                    <div class="cards flex mt-1 gap-2">
+
+                        <div class="card cursor-pointer flex flex-col items-center center  relative">
+                            <img src="images/card-img1.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img2.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Pride and Politics ft. Anis...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img3.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">An Ode to Artists : Ft...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img4.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card cursor-pointer flex flex-col items-center center relative">
+                            <span class="ply-btn absolute rounded-xl"><img src="images/play-btn.svg" width="30" alt="" ></span>
+                            <img src="images/card-img5.jpeg" width="209" alt="Card Image" class="card-img rounded-md">
+                            <div class="card-text w-full text-ellipsis overflow-hidden flex flex-col gap-1">
+                                <span class="card-title">Protein: Are You Gett...</span>
+                                <span class="card-desc">Jun 13. 32 min</span>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+
+                </div>
+
+
+                <footer class="flex space-between w-full mt-10">
+                    <div class="footer-link-section w-full flex ">
+                        <div class="footer-links">
+                            <span>Company</span>
+                            <ul  class="flex flex-col gap-1">
+                                <li>About</li>
+                                <li>Jobs</li>
+                                <li>For the Record</li>
+                            </ul>
+                        </div>
+                        
+
+                        <div class="footer-links">
+                            <span>Communities</span>
+                            <ul class="flex flex-col gap-1">
+                                <li>For Artists</li>
+                                <li>Developers</li>
+                                <li>Advertising</li>
+                                <li>Investors</li>
+                                <li>Vendors</li>
+                            </ul>
+                        </div>
+                        
+
+                        <div class="footer-links">
+                            <span>Company</span>
+                            <ul  class="flex flex-col gap-1">
+                                <li>About</li>
+                                <li>Jobs</li>
+                                <li>For the Record</li>
+                            </ul>
+                        </div>
+                        
+
+                        <div class="footer-links">
+                            <span>Company</span>
+                            <ul  class="flex flex-col gap-1">
+                                <li>About</li>
+                                <li>Jobs</li>
+                                <li>For the Record</li>
+                            </ul>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="social-media flex space-evenly items-center  mt-1 gap-2">
+                        <span class="rounded-xl s-link cursor-pointer">
+                            <img src="images/insta.svg" width="20" alt="">
+                        </span>
+
+                        <span class="rounded-xl s-link cursor-pointer">
+                            <img src="images/twitter.svg" width="20" alt="">
+                        </span>
+
+                        <span class="rounded-xl s-link cursor-pointer">
+                            <img src="images/fb.svg" width="20" alt="">
+                        </span>
+                    </div>
+
+                    
+                    
+                    
+                    
+                </footer>
+                
+                <div class="breaker w-full mt-10 rounded-xl"></div>
+                
+                <div class="base-footer flex mt-10 space-between">
+                    <ul class="flex space-between links gap-2">
+                        <li>Legal</li>
+                        <li>Safety & Privacy Center</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookies</li>
+                        <li>About Ads</li>
+                        <li>Accessiblity</li>
+                    </ul>
+
+                    <div class="copyright">
+                        <span>&copy; 2024 Spotify AB</span>
+                    </div>
+                    
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <div class="music-player w-full flex select-none">
+        <div class="player w-full flex center items-center flex-col ">
+            <div class="player-controls  flex space-evenly gap-2">
+                <span>
+                    <img src="images/shuffle.svg" width="15" alt="">
+                </span>
+                <span>
+                    <img src="images/play-prev.svg" width="15" alt="">
+                </span>
+
+                <span class="rounded-xl">
+                    <img src="images/pause-play.svg"  width="15" alt="">
+                </span>
+
+                <span>
+                    <img src="images/play-next.svg" width="15" alt="">
+                </span>
+
+                <span>
+                    <img src="images/repeat.svg" width="15" alt="">
+                </span>
+            </div>
+            <div class="player-progress flex center">
+                <div class="progress-bar rounded-xl"></div>
+                
+            </div>
+        </div>
+        <div class="controls">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
