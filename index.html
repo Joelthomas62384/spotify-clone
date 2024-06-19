@@ -1186,8 +1186,8 @@
 
     </main>
 
-    <div class="music-player w-full flex select-none">
-        <div class="player w-full flex center items-center flex-col ">
+    <div class="music-player w-full flex select-none flex-end">
+        <div class="player w-full flex  items-center flex-col ">
             <div class="player-controls  flex space-evenly gap-2">
                 <span>
                     <img src="images/shuffle.svg" width="15" alt="">
@@ -1209,11 +1209,33 @@
                 </span>
             </div>
             <div class="player-progress flex center">
-                <div class="progress-bar rounded-xl"></div>
+                <div class="progress-bar rounded-md"></div>
                 
             </div>
         </div>
-        <div class="controls">
+        <div class="controls flex items-center gap-1">
+            <span>
+                <img src="images/yt-ctrl.svg" width="15" alt="">
+            </span>
+
+            <span>
+                <img src="images/queue.svg" width="15" alt="">
+            </span>
+
+            <span>
+                <img src="images/connect.svg" width="15" alt="">
+            </span>
+
+            <span class="flex items-center gap-1">
+                <img src="images/mute.svg" width="15" alt="">
+                <div class="small-progress rounded-md"></div>
+                <span class="volume rounded-xl"></span>
+            </span>
+
+            <span >
+                <img src="images/full.svg" width="15" alt="">
+            </span>
+
             
         </div>
     </div>

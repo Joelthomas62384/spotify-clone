@@ -106,3 +106,7 @@
 .select-none{
     user-select: none;
 }
+
+.flex-end{
+    justify-content: flex-end;
+}

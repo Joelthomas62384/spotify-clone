@@ -301,6 +301,10 @@ background-color: rgb(55, 53, 53);
     height: 4rem;
 }
 
+.player{
+    flex-basis: 75%;
+}
+
 .player-controls{
     width: 15%;
 }
@@ -334,7 +338,7 @@ background-color: rgb(55, 53, 53);
 
 .progress-bar{
     width: 90%;
-    height: 1%;
+    height: 2px;
     background-color: #ffffff70;
     margin-top: 10px;
 }
@@ -355,4 +359,51 @@ background-color: rgb(55, 53, 53);
     color: rgba(255, 255, 255, 0.383);
     top: 0;
     right: 0;
+}
+
+.controls{
+   flex-basis: 10%;
+   margin-right: 12px;
+}
+
+.small-progress{
+    width: 70px;
+    height: 2px;
+    background-color: white;
+}
+
+.controls>span{
+    cursor: pointer;
+}
+.controls>span:nth-child(4){
+    cursor: pointer;
+    position: relative;
+}
+.controls>span:nth-child(4)>div{
+    transition: 0.1s ease-in-out;
+}
+
+.controls>span:nth-child(4):hover >div{
+    background-color: rgb(35, 206, 35);
+   
+    height: 3px;
+} 
+
+.volume{
+    height: 15px;
+    position: absolute;
+    width: 15px;
+    background-color: white;
+    right: 0px;
+    opacity: 0;
+    transition: 0.2s ease-in;
+}
+
+
+.controls>span:nth-child(4):hover .volume{
+    opacity: 1;
+}
+
+.controls>span:nth-child(1) , .controls>span:nth-child(5) {
+    cursor: no-drop;
 }
